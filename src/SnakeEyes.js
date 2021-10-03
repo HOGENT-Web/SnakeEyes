@@ -45,8 +45,8 @@ export default function SnakeEyes({nbrOfEyes=2}){
         <p>
             Max total: {maxTotal}
         </p>
-        {hasSnakeEyes(eyes) && <div className="comment">Oeps you did it again!</div>}
-        <button onClick={reset}>Play again</button>
+        {hasSnakeEyes(eyes) && (<><div className="comment">Oeps you did it again!</div>
+        <button onClick={reset}>Play again</button></>)}
         </>
     )
 }
