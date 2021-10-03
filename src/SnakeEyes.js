@@ -4,7 +4,7 @@ import Dice from "./Dice";
 export default function SnakeEyes({nbrOfEyes=2}){
 
     const emptyArray = new Array(nbrOfEyes).fill(6)
-    console.log(emptyArray);
+
     const [eyes, setEyes] = useState(emptyArray);
     const [total, setTotal] = useState(0);
     const [maxTotal, setMaxTotal] = useState(0);
@@ -32,7 +32,7 @@ export default function SnakeEyes({nbrOfEyes=2}){
     return (
         <>
         <h1>Snake Eyes</h1>
-        <p>Keep going but don't get 2 one's</p>
+        <p>Keep going but don't get {nbrOfEyes} one's</p>
         <p>Click on a dice to roll </p>
         <p>
         { eyes.map((eye, index) => 
