@@ -1,5 +1,4 @@
 import SnakeEyes from './SnakeEyes';
-import './App.css';
 
 function App() {
   return (
