@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-   <SnakeEyes nbrOfEyes={4}/>
+    <SnakeEyes nrOfEyes={4} />
   );
 }
 
